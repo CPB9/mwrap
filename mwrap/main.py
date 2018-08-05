@@ -16,6 +16,10 @@ def main():
     p.add_argument('name', help='subproject name', nargs='?')
     p.set_defaults(command=commands.diff_wrap)
 
+    p = subparsers.add_parser('status', help='Show subproject status')
+    p.add_argument('name', help='subproject name', nargs='?')
+    p.set_defaults(command=commands.status)
+
     args = parser.parse_args()
     return args.command(args)
 
