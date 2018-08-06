@@ -26,7 +26,7 @@ setuptools.setup(
     description="Utilities for managing meson subprojects",
     url="https://github.com/CPB9/mwrap.git",
     packages=setuptools.find_packages(),
-    install_requires=["colorama"],
+    install_requires=["colorama", "pygit2"],
     classifiers=(
         "Environment :: Console",
         'Programming Language :: Python :: 2',
